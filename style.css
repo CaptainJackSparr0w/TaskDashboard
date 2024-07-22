@@ -1,57 +1,109 @@
-.body{
-    background-color: black;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.card{    
-    border: solid 1px dimgray;
-    border-radius: 30px;
-    padding: 10px;
-    font-size: xx-large;
-    font-family: monospace;
-    text-align: center;
-    color: white;
-    box-shadow: 1px 1px orchid;
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+
+
+  /* padding: 0; */
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  /* padding: 20px; */
 }
-.photo-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 420px;
-  }
-  
-  /* Medium screens */
-  @media screen and (min-width: 600px) {
-    .card-tall {
-      grid-row: span 2 / auto;
-    }
-  
-    .card-wide {
-      grid-column: span 2 / auto;
-    }
-  }
 
-  .newTitle{
-    width: 100%;
-    height: 10%;
-    border-radius: 10px;
-    background-color: #ffffff28;
-    color: white;
-    border: solid 2px;
-  }
+.container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .newDesc{
-    width: 100%;
-    height: 70%;
-    border-radius: 10px;
-    background-color: #ffffff28;
-    color: white;
-    border: solid 2px;
+/* Header styles */
+header {
+  color: rgb(71, 138, 238);
+  margin-bottom: 20px;
+}
+/* Header styles with background image */
+.header-image {
+  background: url('path-to-your-image.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+  margin-bottom: 20px;
+}
+
+.header-image h1 {
+  margin: 0;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+      width: 90%;
   }
-  .button{
-      background-color: white;
-      border-radius: 30px;
-      width: 30%;
-      border:none;
-  }
-  ::placeholder {
-    color: rgb(241, 241, 233); /* Change the color to gray */
+}
+
+.section {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.bookCover {
+  width: 100px;
+  height: 150px;
+  border-radius: 5%;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgb(90, 218, 243);
+}
+.title {
+  color: rgb(71, 138, 238);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+.subtitle {
+  color: rgb(71, 138, 238);
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic ;
+}
+.content ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+.content ul li {
+  margin: 10px 0;
 }
